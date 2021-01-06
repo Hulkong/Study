@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Dontknow-Height-Vertical-Horizental-Center</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .cover {
+            background-color: skyblue;
+            height: 100vh;
+            display: table;
+            width: 100%;
+        }
+
+        .cover-inner {
+            background-color: orange;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .box {
+            background-color: deepskyblue;
+            width: 400px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- IE6, 7에서 안됨 -->
+    <div class="cover">
+        <div class="cover-inner">
+            <div class="box">WOW</div>
+        </div>
+    </div>
+</body>
+
+</html>
